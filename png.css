@@ -1,0 +1,83 @@
+body {
+    font-family: "Trebuchet MS", Monaco, monospace;
+    color:Black;
+    background-color:#99badd;
+    text-align:center;
+    margin:50px 0px; 
+    padding:5px;
+    border-style: solid;
+    border-width: 10px;
+}
+h1 {
+	font-family: "Trebuchet MS", Monaco, monospace;
+	color:#551a8b;
+	size:25px;
+	text-align:center;
+}
+.button {
+	background-color:White;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 20px;
+    background-color:White;
+    text-align:center;
+    border-radius: 16px;
+    text-align:center;  
+    border: 2px solid white;
+}
+.textview {
+	background-color:White;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 20px;
+    background-color:White;
+    text-align:center;
+    border-radius: 16px;
+    border: 2px solid white;
+    border-radius: 4px;
+    width: 625px;
+}
+button {
+    background-color:Green;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 20px;
+    background-color:Green;
+    text-align:center;
+    border-radius: 16px;
+    border: 2px solid green;
+}
+.form {
+	background-color:ghostwhite;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 20px;
+    background-color:White;
+    text-align:center;
+    border-radius: 16px;
+    text-align:center;
+    }
+#uinp {
+    background-color:ghostwhite;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 20px;
+    background-color:White;
+    text-align:center;
+    border-radius: 16px;
+    text-align:center;}
+ 
+}
+a:link {
+    color:crimson;
+    background-color:transparent;
+    
+}
+a:visited {
+    color:fuchsia;
+    background-color:transparent;
+}
+a:hover {
+    color:darkred;
+    background-color:transparent
+        

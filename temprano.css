@@ -1,0 +1,81 @@
+body {
+    font-family: "Lucida Console", Monaco, monospace;
+    color:Black;
+    background-color:#99badd;
+    text-align:center;
+    align:center;
+    margin:50px 0px; 
+    padding:5px;
+    border-style: solid;
+    border-width: 10px;
+}
+h1 {
+	font-family: "Lucida Console", Monaco, monospace;
+	color:#551a8b;
+	size:25px;
+	text-align:center;
+    align:center;
+}
+.button {
+	background-color:White;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 20px;
+    background-color:White;
+    text-align:center;
+    align-content:center;
+    border-radius: 16px;
+    text-align:center;
+    align-content:center;
+}
+.textview {
+	background-color:White;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 20px;
+    background-color:White;
+    text-align:center;
+    align:center;
+    border-radius: 16px;
+    text-align:center;
+    align:center;
+}
+button {
+    background-color:Green;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 20px;
+    background-color:Green;
+    text-align:center;
+    align:center;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.form {
+	background-color:White;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 20px;
+    background-color:White;
+    text-align:center;
+    align:center;
+    border-radius: 16px;
+    text-align:center;
+    align:center;
+    }
+#buttons {
+       text-align:center;
+   }
+#square {
+       position: absolute;
+       top: 150px;
+       left: 100px;
+       width: 200px;
+       height: 200px;
+       border: 2px solid black;
+       padding: 10px;
+       background-color: #e0e0e0;
+   }
+   div {
+       padding: 10px;
+   }

@@ -1,0 +1,125 @@
+body {
+    font-family: "Trebuchet MS", Monaco, monospace;
+    color:Black;
+    background-color:#99badd;
+    text-align:center;
+    margin:50px 0px; 
+    padding:5px;
+    border-style: solid;
+    border-width: 10px;
+}
+h1 {
+	font-family: "Trebuchet MS", Monaco, monospace;
+	color:#551a8b;
+	size:25px;
+	text-align:center;
+}
+.button {
+	background-color:White;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 20px;
+    background-color:White;
+    text-align:center;
+    border-radius: 16px;
+    text-align:center;  
+    border: 2px solid white;
+}
+.textview {
+	background-color:White;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 20px;
+    background-color:White;
+    text-align:center;
+    border-radius: 16px;
+    border: 2px solid white;
+    border-radius: 4px;
+    width: 625px;
+}
+button {
+    background-color:Green;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 20px;
+    background-color:Green;
+    text-align:center;
+    border-radius: 16px;
+    border: 2px solid green;
+}
+.form {
+	background-color:ghostwhite;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 20px;
+    background-color:White;
+    text-align:center;
+    border-radius: 16px;
+    text-align:center;
+    }
+a:link {
+    color:crimson;
+    background-color:transparent;
+    
+}
+a:visited {
+    color:fuchsia;
+    background-color:transparent;
+}
+a:hover {
+    color:darkred;
+    background-color:transparent
+}
+
+#fahr {
+    background-color:ghostwhite;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 20px;
+    background-color:White;
+    text-align:center;
+    border-radius: 16px;
+}
+
+#cels {
+    background-color:ghostwhite;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 20px;
+    background-color:White;
+    text-align:center;
+    border-radius: 16px;
+}
+
+p {
+    text-align:center;
+}
+
+
+.bliss {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+
+.imgDesc {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.bliss:hover .imgDesc {
+  visibility: visible;
+  opacity: 1;
+}
+
+img:hover {
+    transform:scale(1.7)
+}
