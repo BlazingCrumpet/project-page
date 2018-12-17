@@ -46,3 +46,7 @@ function runprogram() {
 	document.write('<button id="2" style = "color:red" onclick="runprogram()"> <strong>Start Program</strong> </button>')
 	document.write('<button id="back" onclick="goBack()">Back</button> <button id="forward" onclick="goForward()">Forward</button>')
 	}
+function goto(){
+	var gone = document.getElementById("page").value
+	window.history.go(gone)
+}
