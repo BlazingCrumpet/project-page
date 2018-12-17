@@ -111,7 +111,7 @@ p {
   color: #fff;
   visibility: hidden;
   opacity: 0;
-  transition: opacity .2s, visibility .2s;
+  transition: opacity .8s, visibility .8s;
 }
 
 .bliss:hover .imgDesc {
@@ -120,5 +120,7 @@ p {
 }
 
 img:hover {
-    transform:scale(1.7)
+    transform:scale(1.7);
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
+  transition: width 2s, height 2s, transform 2s;
 }
