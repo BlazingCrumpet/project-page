@@ -1,23 +1,41 @@
 <!DOCTYPE html>
-<html>
+    <html>
+        <head>
+            <title> Quadratic Calculator/Grapher </title>
+            <script src = "quad.js">
+            </script>
+            <link rel="stylesheet" type="text/css" href="png.css">
+            <meta charset = "UTF-8" />
+        </head>
 
+        <body>
+            <center>
+            <h1> Quadratic Calculator </h1>
+            </center>
+            
+            <center>
 
-<head>
-<meta charset="ISO-8859-1">
+                <button class = "startButton" onclick = "quadRun()"> Initialize </button>
 
-<title>Quadratic Calculator</title>
-</head>
-
-<link rel="stylesheet" type="text/css" href="quad.css">
-<script src="quad.js"> </script>
-
-<body>
-    
-<h1> Quadratic Calculator</h1>
-<button onclick="runprogram()">
-    <button onclick = "window.history.back()">Back</button> 
-<button onclick = "window.history.forward()">Forward</button>
-    
-    <strong>Quadratic Calculator</strong>
-    
-    </button>
+            <p id = "userInputs"> Your Inputs </p>
+            <p id = "rootType"> Type of Roots </p>
+            <p id = "root1"> 1st Root </p>
+            <p id = "root2">2nd Root </p>
+            <p id = "ver"> Vertex </p>
+            <p id = "aOS"> Axis of Symmetry</p>
+            <p id = "discrim"> Discriminant</p>
+            </center>
+              <canvas width = "600" height = "600" id="quadriCan"></canvas>
+            <center>
+            <h1>
+            Enter 3 variables, and hit the graph button when done.</h1>
+            <button onclick = "quadriGraph()"> Graph </button>
+            </center>
+            
+            
+          Enter A  <input type = "number" id = "A"> 
+           Enter B <input type = "number" id = "B"> 
+            Enter C <input type = "number" id = "C"> 
+           Scale Factor <input type = "number" id = "Scale"> 
+        </body>
+    </html>
