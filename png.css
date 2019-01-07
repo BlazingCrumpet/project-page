@@ -61,7 +61,7 @@ button {
     background-color:ghostwhite;
     font-size: 15px;
     font-family: "Lucida Console", Monaco, monospace;
-    padding: 20px;
+    padding: 10px;
     background-color:White;
     text-align:center;
     border-radius: 16px;
@@ -80,4 +80,49 @@ a:visited {
 a:hover {
     color:darkred;
     background-color:transparent
+}
         
+#A {
+    background-color:ghostwhite;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 10px;
+    background-color:White;
+    text-align:center;
+    border-radius: 16px;
+    text-align:center;
+}
+#B {
+    background-color:ghostwhite;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 10px;
+    background-color:White;
+    text-align:center;
+    border-radius: 16px;
+    text-align:center;
+}
+
+#C {
+    background-color:ghostwhite;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 10px;
+    background-color:White;
+    text-align:center;
+    border-radius: 16px;
+    text-align:center;
+}
+  
+        
+#Scale {
+    background-color:ghostwhite;
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 10px;
+    background-color:White;
+    text-align:center;
+    border-radius: 16px;
+    text-align:center;
+}
+  
