@@ -1,63 +1,64 @@
 function quadRun(){
-    var a = prompt("Enter A. It cannot be a decimal or 0.");
-
-    if (parseInt(a) != a || a == 0){
-        alert("Enter a nonzero whole number.");
+   
+   
+    var A = document.getElementById("A").value
+    if (parseInt(A) != A || A == 0){
+        alert("The Input is either 0 or a decimal.");
         exit;
     }
-
-    var b = prompt("Enter B. It cannot be a decimal");
-
-    if (parseInt(b) != b){
-        alert("Enter an integer.");
+ 
+    var B = document.getElementById("B").value
+ 
+    if (parseInt(B) != B){
+        alert("The input is a decimal.");
         exit;
     }
-
-    var c = +prompt("Enter C. It cannot be a decimal");
-
-    if (parseInt(c) != c){
-        alert("Enter an integer");
+ 
+    var C = Number(document.getElementById("C").value)
+ 
+    if (parseInt(C) != C){
+        alert("The input is a decimal.");
         exit;
     }
-
-    document.getElementById("userInputs").innerHTML = "A = " + a + "<br>" + "B = " + b + "<br>" +  "C = " + c;
-
-
-    var AOS = (-1 * b) / (2 * a);
+ 
+    document.getElementById("userInputs").innerHTML = "A = " + A + "<br>" + "B = " + B + "<br>" +  "C = " + C;
+ 
+ 
+    var AOS = (-1 * B) / (2 * A);
     document.getElementById("aOS").innerHTML = "Axis of Symmetry = " + AOS;
-
-    var k = (a * AOS * AOS + b * AOS + c);
+ 
+    var k = (A * AOS * AOS + B * AOS + C);
     document.getElementById("ver").innerHTML = "Vertex = " + AOS + "," + k;
-
-    var Discrim = (b * b) - (4 * a * c);
+ 
+    var Discrim = (B * B) - (4 * A * C);
     document.getElementById("discrim").innerHTML = "Discriminant = " + Discrim;
-
+ 
     if (Discrim == 0){
         document.getElementById("rootType").innerHTML = "1 Real Root";
     }
-
+ 
     if (Discrim > 0){
         document.getElementById("rootType").innerHTML = "2 Real Roots";
     }
-
+ 
     if (Discrim < 0){
         document.getElementById("rootType").innerHTML = "2 Imaginary Roots";
-        document.getElementById("root1").innerHTML = "Root 1 = " + (-1 * b) + "+" + "\u221A" +  (Discrim * -1) + "i /" +  (2 * a);
-        document.getElementById("root2").innerHTML = "Root 2 = " + (-1 * b) + "-" + "\u221A" +  (Discrim * -1) + "i /"  + (2 * a);
+        document.getElementById("root1").innerHTML = "Root 1 = " + (-1 * B) + "+" + "\u221A" +  (Discrim * -1) + "i /" +  (2 * A);
+        document.getElementById("root2").innerHTML = "Root 2 = " + (-1 * B) + "-" + "\u221A" +  (Discrim * -1) + "i /"  + (2 * A);
     } else{
-        document.getElementById("root1").innerHTML = "Root 1 = " + (-1 * b) + "+" + "\u221A" +  (Discrim * -1) + "/ " +  (2 * a);
-        document.getElementById("root2").innerHTML = "Root 2 = " + (-1 * b) + "-" + "\u221A" +  (Discrim * -1) + "/ "  + (2 * a);
+        document.getElementById("root1").innerHTML = "Root 1 = " + (-1 * B) + "+" + "\u221A" +  (Discrim * -1) + "/ " +  (2 * A);
+        document.getElementById("root2").innerHTML = "Root 2 = " + (-1 * B) + "-" + "\u221A" +  (Discrim * -1) + "/ "  + (2 * A);
     }
-
-
-}
-
-function quadriGraph(){
-
-  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
     var canvas = document.getElementById('quadriCan')
     var ctx = canvas.getContext("2d");
-    
+   
     for(var lineX = -500; lineX < 500; lineX += 10){
         ctx.beginPath();
         ctx.strokeStyle = "black"
@@ -65,24 +66,31 @@ function quadriGraph(){
         ctx.lineTo(lineX, -500);
         ctx.stroke();
     }
-    
+     for(var lineX = -500; lineX < 500; lineX += 10){
+        ctx.beginPath();
+        ctx.strokeStyle = "black"
+        ctx.moveTo(500, lineX);
+        ctx.lineTo(-500, lineX);
+        ctx.stroke();
+    }
+   
     ctx.clearRect(0,0, ctx.width, ctx.height);
-     aS = document.getElementById('A').value;
-     bS = document.getElementById('B').value;
-     cS = document.getElementById('C').value;
-    
+     aG = document.getElementById('A').value;
+     bG = document.getElementById('B').value;
+     cG = document.getElementById('C').value;
+   
      scale = document.getElementById('Scale').value;
-    
-     A = aS/(scale)
-     B = bS
-     C = cS*(scale)
-    
+   
+     A = aG/(scale)
+     B = bG
+     C = cG*(scale)
+   
        ctx.moveTo(0,250);
        ctx.strokeStyle='black'
-    
+   
        for(var x = -250; x < 250; x++)
            {
            ctx.lineTo(x+250,(-1*(A*(x*x)+B*x+C)) + 250)
            ctx.stroke();
            }
-           }
+}
